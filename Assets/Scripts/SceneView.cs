@@ -22,7 +22,7 @@ public class SceneView : MonoBehaviour
         {
             Scene scene = sceneLoader.scenes[i];
             Button button = Instantiate(languageSelectButtonPrefab, buttonParent);
-            button.GetComponentInChildren<Text>().text = $"Episode {scene.episodeNumber}. {scene.name}";
+            button.GetComponentInChildren<Text>().text = scene.name;
             button.onClick.AddListener(() => mainTextArea.SwitchScene(scene));
         }
     }

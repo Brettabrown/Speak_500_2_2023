@@ -72,7 +72,7 @@ public class WordInformationPanel : MonoBehaviour
     {
         if(!clipCache.ContainsKey(word))
         {
-            var request = UnityWebRequestMultimedia.GetAudioClip($"https://eofenglish.com/SSSE/Audio/{word}.mp3", AudioType.MPEG);
+            var request = UnityWebRequestMultimedia.GetAudioClip($"https://eofenglish.com/SSSE/500_Audio/{word}.mp3", AudioType.MPEG);
             yield return request.SendWebRequest();
             var clip = DownloadHandlerAudioClip.GetContent(request);
             clipCache.Add(word, clip);

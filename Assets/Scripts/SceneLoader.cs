@@ -24,9 +24,8 @@ public class SceneLoader : MonoBehaviour
                     scenes.Add(scene);
                 }
                 scene = new Scene();
-                string[] split = line.Substring(1, line.Length - 1).Split('|');
-                scene.name = split[0];
-                scene.episodeNumber = int.Parse(split[1]);
+                scene.name = line.Replace("#", "").Trim();
+                print(scene.name);
                 scene.sentences = new List<Sentence>();
                 scene.sceneData = (SceneData)Resources.Load(scene.name, typeof(SceneData));
             }
@@ -50,7 +49,6 @@ public class Scene
 {
     public string name;
     public SceneData sceneData;
-    public int episodeNumber;
     public List<Sentence> sentences;
 }
 

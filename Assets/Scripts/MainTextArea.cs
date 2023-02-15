@@ -11,6 +11,8 @@ public class MainTextArea : MonoBehaviour
     [SerializeField]
     private Text translationText;
 
+
+    [SerializeField]
     private Scene currentScene;
 
     [SerializeField]
@@ -57,7 +59,7 @@ public class MainTextArea : MonoBehaviour
         selectScene.SetActive(false);
         currentLine = -1;
         currentScene = scene;
-        videoPlayer.SetURL($"https://eofenglish.com/SSSE/Scenes/{scene.sceneData.videoClipName}.mp4");
+        videoPlayer.SetURL($"https://eofenglish.com/SSSE/500_Video/{scene.sceneData.videoClipName}.mp4");
         ShowText();
         UpdateShowAll();
     }
