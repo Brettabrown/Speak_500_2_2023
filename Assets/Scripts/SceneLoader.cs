@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -31,7 +31,7 @@ public class SceneLoader : MonoBehaviour
             }
             else
             {
-                string[] sentences = line.Split('|');
+                string[] sentences = line.Split('█');
                 if (sentences.Length < System.Enum.GetValues(typeof(LanguageEnum.Languages)).Length)
                 {
                     Debug.LogError($"Scene: {scene.name}. Sentence doesn't contain all languages!: {line}");
