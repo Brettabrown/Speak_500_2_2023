@@ -1607,7 +1607,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 300
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 300
     m_Alignment: 1
@@ -3517,6 +3517,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cda3da9e6fcac341be12274916c19b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultFont: {fileID: 12800000, guid: 6d1c881fd93b9c140a54ab69cf4c5008, type: 3}
+  khmerFont: {fileID: 12800000, guid: 167a3e91dfc35a6408c251a79de6f292, type: 3}
+  burmeseFont: {fileID: 12800000, guid: 10705a11fbf66a94db24397856a5bec1, type: 3}
+  amharicFont: {fileID: 12800000, guid: f2ce6eb930f4d2d4da7bfe50cdde1672, type: 3}
+  dhivehiFont: {fileID: 12800000, guid: ae2462067d2d1eb4f9754bfc852502ad, type: 3}
 --- !u!4 &1192673759
 Transform:
   m_ObjectHideFlags: 0

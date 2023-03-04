@@ -62,7 +62,7 @@ public class WordInformationPanel : MonoBehaviour
             translation.text = WordLoader.wordsDict[word].translations[(int)translator.CurrentLanguage];
         }
 
-
+        translation.font = Translator.GetFont(translator.CurrentLanguage);
         audioButton.onClick.RemoveAllListeners();
         audioButton.onClick.AddListener(() => StartCoroutine(PlayWord(word)));
 

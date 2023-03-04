@@ -86,6 +86,7 @@ public class MainTextArea : MonoBehaviour
                 //Instantiate(spacer, scrollViewContent);
                 Text _text = Instantiate(textPrefab, scrollViewContent);
                 _text.text = sentence.sentencesTranslated[(int)translator.CurrentLanguage];
+                _text.font = Translator.GetFont(translator.CurrentLanguage);
             }
             Instantiate(spacer, scrollViewContent);
         }
@@ -137,6 +138,7 @@ public class MainTextArea : MonoBehaviour
         {
             translationText.text = currentScene.sentences[currentLine].sentencesTranslated[(int)translator.CurrentLanguage];
         }
+        translationText.font = Translator.GetFont(translator.CurrentLanguage);
     }
 
     public void ShowAll()
