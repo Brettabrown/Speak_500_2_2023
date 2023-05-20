@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f928b5c0f4e69e14dbe3be568feea2c1, type: 3}
-  m_Name: Lesson 1
+  m_Name: Lesson_1
   m_EditorClassIdentifier: 
   videoClipName: Scene_1A
   sentenceStartTimes:

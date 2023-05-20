@@ -27,7 +27,7 @@ public class SceneLoader : MonoBehaviour
                 scene.name = line.Replace("#", "").Trim();
                 print(scene.name);
                 scene.sentences = new List<Sentence>();
-                scene.sceneData = (SceneData)Resources.Load(scene.name, typeof(SceneData));
+                scene.sceneData = (SceneData)Resources.Load(scene.name.Replace(' ', '_'), typeof(SceneData));
             }
             else
             {
