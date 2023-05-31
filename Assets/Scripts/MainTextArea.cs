@@ -59,7 +59,7 @@ public class MainTextArea : MonoBehaviour
         selectScene.SetActive(false);
         currentLine = -1;
         currentScene = scene;
-        videoPlayer.SetURL($"https://eofenglish.com/SSSE/500_Video/{scene.sceneData.videoClipName}.mp4");
+        videoPlayer.SetURL($"https://brettabrown.com/SSSE/500_Video/{scene.sceneData.videoClipName}.mp4");
         ShowText();
         UpdateShowAll();
     }
