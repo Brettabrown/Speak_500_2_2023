@@ -85,12 +85,20 @@ public class MainVideoPlayer : MonoBehaviour
 
     public void VideoOn()
     {
+        if (videoPlayer.url.Length == 0)
+        {
+            return;
+        }
         rawImage.enabled = true;
         mainTextArea.HideAll();
     }
 
     public void VideoOff()
     {
+        if (videoPlayer.url.Length == 0)
+        {
+            return;
+        }
         rawImage.enabled = false;
         mainTextArea.ShowAll();
     }
