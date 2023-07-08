@@ -16,14 +16,17 @@ public class SceneView : MonoBehaviour
     [SerializeField]
     private MainTextArea mainTextArea;
 
+    [SerializeField]
+    private GameObject titleScreen;
+
     private void Start()
     {
-        for(int i = 0; i < sceneLoader.scenes.Count; i++)
+        for (int i = 0; i < sceneLoader.scenes.Count; i++)
         {
             Scene scene = sceneLoader.scenes[i];
             Button button = Instantiate(languageSelectButtonPrefab, buttonParent);
             button.GetComponentInChildren<Text>().text = scene.name;
-            button.onClick.AddListener(() => mainTextArea.SwitchScene(scene));
+            button.onClick.AddListener(() => { mainTextArea.SwitchScene(scene); titleScreen.SetActive(false); });
         }
     }
 

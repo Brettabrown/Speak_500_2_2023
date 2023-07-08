@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\MainTextArea.cs" />
     <Compile Include="Assets\Scripts\SceneView.cs" />
     <Compile Include="Assets\Scripts\SceneData.cs" />
+    <Compile Include="Assets\Scripts\TitleScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

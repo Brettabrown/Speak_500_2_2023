@@ -115,6 +115,15 @@ public class MainVideoPlayer : MonoBehaviour
         videoPlayer.SetDirectAudioVolume(0, Mathf.Clamp01(videoPlayer.GetDirectAudioVolume(0)));
     }
 
+
+    [SerializeField]
+    private GameObject titleScreen;
+    public void TitleScreen()
+    {
+        videoPlayer.Pause();
+        titleScreen.SetActive(true);
+    }
+
     public void RaiseSound()
     {
         videoPlayer.SetDirectAudioMute(0, false);
