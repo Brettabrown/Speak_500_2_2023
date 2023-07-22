@@ -34,6 +34,7 @@ public class MainVideoPlayer : MonoBehaviour
 
     private void Awake()
     {
+        videoOn = true;
         ClickableSentence.Clicked += _ =>
         {
             print("F");
@@ -81,16 +82,40 @@ public class MainVideoPlayer : MonoBehaviour
         videoPlayer.Play();
         pauseButton.SetActive(true);
         playButton.SetActive(false);
+
     }
 
+    private bool videoOn;
+    [SerializeField]
+    private Sprite onVideoImage;
+    [SerializeField]
+    private Sprite offVideoImage;
+    [SerializeField]
+    private Image videoButtonImage;
+
+    [SerializeField]
+    private GameObject seeEverything;
     public void VideoOn()
     {
         if (videoPlayer.url.Length == 0)
         {
             return;
         }
-        rawImage.enabled = true;
-        mainTextArea.HideAll();
+        if (videoOn)
+        {
+            rawImage.enabled = false;
+            mainTextArea.ShowAll();
+            seeEverything.SetActive(true);
+            videoButtonImage.sprite = onVideoImage;
+        }
+        else
+        {
+            rawImage.enabled = true;
+            mainTextArea.HideAll();
+            seeEverything.SetActive(false);
+            videoButtonImage.sprite = offVideoImage;
+        }
+        videoOn = !videoOn;
     }
 
     public void VideoOff()
@@ -120,8 +145,14 @@ public class MainVideoPlayer : MonoBehaviour
     private GameObject titleScreen;
     public void TitleScreen()
     {
+        if (!videoOn)
+        {
+            VideoOn();
+        }
+        Play();
         videoPlayer.Pause();
         titleScreen.SetActive(true);
+        
     }
 
     public void RaiseSound()

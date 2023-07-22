@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 5377110459502921710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 5377110459991247098}
   m_RootOrder: 0
@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1.371, y: 0.00021935}
-  m_SizeDelta: {x: 415.1227, y: 123.84}
+  m_SizeDelta: {x: 2767.4846, y: 825.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5377110459502921707
 CanvasRenderer:
@@ -67,11 +67,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6d1c881fd93b9c140a54ab69cf4c5008, type: 3}
-    m_FontSize: 45
+    m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 261
+    m_MinSize: 3
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
