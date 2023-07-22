@@ -13,4 +13,12 @@ MonoBehaviour:
   m_Name: Lesson_49
   m_EditorClassIdentifier: 
   videoClipName: Scene_49A
-  sentenceStartTimes: []
+  sentenceStartTimes:
+  - 0.1
+  - 5.1
+  - 7.4
+  - 9.2
+  - 10.8
+  - 14.2
+  - 18
+  - 20

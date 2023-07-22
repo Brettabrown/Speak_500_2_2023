@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoClipName: Scene_2A
   sentenceStartTimes:
-  - 1
-  - 2.1
-  - 5.3
-  - 7.1
-  - 10
+  - 3
+  - 4
+  - 7.4
+  - 9.2
   - 13
-  - 14
-  - 16
-  - 17.5
+  - 16.1
+  - 17.4
   - 19.3
-  - 22
+  - 21
+  - 22.8
+  - 25
